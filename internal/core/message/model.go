@@ -5,7 +5,7 @@ import "github.com/google/uuid"
 type Message struct {
 	// Identity & tracing
 	ID         uuid.UUID // globally unique (uuid/ulid)
-	TraceID    string    // optional: distributed tracing
+	TraceID    uuid.UUID // optional: distributed tracing
 	ProducedAt int64     // unix millis
 
 	// Routing
